@@ -2,12 +2,12 @@
 print("Digite os valores dos gases")
 mp10=float(input("Qual o valor de Mp10"))
 mp25=float(input("Qual o valor de mp2,5"))
-O3=float(input("Qual o valor de O3"))
-CO=float(input("Qual o valor de CO"))
-NO2=float(input("Qual o valor de NO2"))
-SO2=float(input("Qual o valor de So2"))
+o3=float(input("Qual o valor de o3"))
+co=float(input("Qual o valor de co"))
+no2=float(input("Qual o valor de no2"))
+so2=float(input("Qual o valor de so2"))
 
-def calcularPureza (mp10, mp25, O3, CO, NO2, SO2):
+def calcularPureza (mp10, mp25, o3, co, no2, so2):
     if mp10 <= 50:
         qualidadeMp10 = 1
     elif 50 < mp10 <= 100:
@@ -30,55 +30,55 @@ def calcularPureza (mp10, mp25, O3, CO, NO2, SO2):
     elif  mp25 > 125:
        qualidadeMp25 = 5
 
-    if O3 <= 100:
-        qualidadeO3 = 1
-    elif 100 < O3 <= 130:
-        qualidadeO3 = 2
-    elif 130 < O3 <= 160:
-        qualidadeO3 = 3
-    elif 160 < O3 <= 200:
-        qualidadeO3 = 4
-    elif  O3 > 200:
-       qualidadeO3 = 5
+    if o3 <= 100:
+        qualidadeo3 = 1
+    elif 100 < o3 <= 130:
+        qualidadeo3 = 2
+    elif 130 < o3 <= 160:
+        qualidadeo3 = 3
+    elif 160 < o3 <= 200:
+        qualidadeo3 = 4
+    elif  o3 > 200:
+       qualidadeo3 = 5
 
-    if CO <= 9:
-        qualidadeCO = 1
-    elif 9 < CO <= 11:
-        qualidadeCO = 2
-    elif 11 < CO <= 13:
-        qualidadeCO = 3
-    elif 13 < CO <= 15:
-        qualidadeCO = 4
-    elif  CO > 15:
-       qualidadeCO = 5
+    if co <= 9:
+        qualidadeco = 1
+    elif 9 < co <= 11:
+        qualidadeco = 2
+    elif 11 < co <= 13:
+        qualidadeco = 3
+    elif 13 < co <= 15:
+        qualidadeco = 4
+    elif  co > 15:
+       qualidadeco = 5
 
-    if NO2 <= 200:
-        qualidadeNO2 = 1
-    elif 200 < NO2 <= 240:
-        qualidadeNO2 = 2
-    elif 240 < NO2 <= 320:
-        qualidadeNO2 = 3
-    elif 320 < NO2 <= 1130:
-        qualidadeNO2 = 4
-    elif  NO2 > 1130:
-       qualidadeNO2 = 5
+    if no2 <= 200:
+        qualidadeno2 = 1
+    elif 200 < no2 <= 240:
+        qualidadeno2 = 2
+    elif 240 < no2 <= 320:
+        qualidadeno2 = 3
+    elif 320 < no2 <= 1130:
+        qualidadeno2 = 4
+    elif  no2 > 1130:
+       qualidadeno2 = 5
     
-    if SO2 <= 20:
-        qualidadeSO2 = 1
-    elif 20 < SO2 <= 40:
-        qualidadeSO2 = 2
-    elif 40 < SO2 <= 365:
-        qualidadeSO2 = 3
-    elif 365 < SO2 <= 800:
-        qualidadeSO2 = 4
-    elif  SO2 > 800:
-       qualidadeSO2 = 5
+    if so2 <= 20:
+        qualidadeso2 = 1
+    elif 20 < so2 <= 40:
+        qualidadeso2 = 2
+    elif 40 < so2 <= 365:
+        qualidadeso2 = 3
+    elif 365 < so2 <= 800:
+        qualidadeso2 = 4
+    elif  so2 > 800:
+       qualidadeso2 = 5
     
-    List = [qualidadeMp10, qualidadeMp25, qualidadeO3, qualidadeCO,qualidadeNO2,qualidadeSO2]
+    List = [qualidadeMp10, qualidadeMp25, qualidadeo3, qualidadeco,qualidadeno2,qualidadeso2]
     qualidade = 0
     for i in range(0,6):
         if List[i] > qualidade:
             qualidade = List[i]
     return qualidade
 
-print (calcularPureza(mp10, mp25, O3, CO, NO2, SO2))
+print (calcularPureza(mp10, mp25, o3, co, no2, so2))
