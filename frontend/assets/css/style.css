@@ -89,28 +89,7 @@ main .container{
     background-color: var(--main-bg);    
     height: auto;
 }
-main .samples-inputs {
-    
-}
-.samples-inputs label {
-    font-size: 23px;
-    width: fit-content;
-    padding: 20px;
-    display: block;
-    background: linear-gradient(#AAA,#666);
-    margin-bottom: 20px;
-    border-radius: 15px;
-}
-.samples-inputs label span {
-    font-size: 18px;
-}
-.samples-inputs label input {
-    height: 30px;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-}
-.samples-inputs button {
+#mostrarAmostras button {
     padding: 13px 20px;
     border-radius: 20px;
     border: none;

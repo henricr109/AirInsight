@@ -1,4 +1,4 @@
-const sendSamples = async () => {
+/*function sendSamples() {
     let pm25 = document.getElementById('pm25').value,
     pm10 = document.getElementById('pm10').value,
     co = document.getElementById('co').value,
@@ -14,12 +14,18 @@ const sendSamples = async () => {
         no2
     }
     JSON.stringify(samples);
-    console.log(samples);
-    await axios.post(`http://localhost:3000/dataSamples/${samples}`)
-    .then(
-        console.log('tentei enviar')
-    )
+    fetch(`http://127.0.0.1:8000/samples/${samples}`,"POST")
+    .then((response)=> {
+        console.log(response)
+    })
     .catch(
         console.log('não recebeu o backend')
     )
-};
+};*/
+
+async function showSamples() {
+    await fetch("http://localhost:8000/samples")
+    .then((res)=> res.json())
+    .then((json)=> console.log(json))
+    .catch(console.error());
+}

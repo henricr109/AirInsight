@@ -24,33 +24,9 @@
     </header>
     <main>
         <div class="container">
-            <div class="samples-inputs">
-                    <label >
-                        <span>Digite a amostra de poluente (pm2,5)</span>
-                        <input id="pm25" type="number">
-                    </label>
-                    <label >
-                        <span>Digite a amostra de poluente (pm10)</span>
-                        <input id="pm10" type="number">
-                    </label>
-                    <label >
-                        <span>Digite a amostra de poluente (co)</span>
-                        <input id="co" type="number">
-                    </label>
-                    <label >
-                        <span>Digite a amostra de poluente (so2)</span>
-                        <input id="so2" type="number">
-                    </label>
-                    <label >
-                        <span>Digite a amostra de poluente (o3)</span>
-                        <input id="o3" type="number">
-                    </label>
-                    <label >
-                        <span>Digite a amostra de poluente (no2)</span>
-                        <input id="no2" type="number">
-                    </label>
-                    <button onclick="sendSamples()">Enviar amostras</button>
-            </div>
+        <div id="mostrarAmostras">
+            <button onclick="showSamples()">Pull samples</button>
+            <div id="spaceToSamples"></div>
         </div>
     </main>
     <footer>
