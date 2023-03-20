@@ -37,11 +37,7 @@ async function sendSamples() {
 }
 
 const testeFunc = async () => {
-    await axios.post(`http://localhost:8000/teste`,{
-    body: `{ "num": 1}`,
-    headers: {
-      'Content-Type': 'application/json'
-    }
+    await axios.post('http://127.0.0.1:8000/teste',{ body: { "number": 55},
 })
 .then((response)=> response.json())
 .then((json)=> console.log(json))

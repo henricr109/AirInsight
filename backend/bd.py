@@ -14,16 +14,16 @@ cursor = connection.cursor()
 
 # Create a table
 
-cursor.execute("""
+'''cursor.execute("""
     begin
         execute immediate 'drop table todoitem';
         exception when others then if sqlcode <> -942 then raise; end if;
-    end;""")
+    end;""")'''
 
 cursor.execute("""
-    create table todoitem (
+    create table amostras (
         id number generated always as identity,
-        description varchar2(4000),
+        so number(4,2),
         creation_ts timestamp with time zone default current_timestamp,
         done number(1,0),
         primary key (id))""")

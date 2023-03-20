@@ -4,6 +4,8 @@ from fastapi.middleware.cors import CORSMiddleware
 import json
 from pydantic import BaseModel
 
+class tester(BaseModel):
+    number:int
 class Samples(BaseModel):
     id:int 
     so2:int
@@ -121,7 +123,8 @@ async def calcPurity(amostra:Samples):
     return json.dumps({"mensagem":f"Resposta: {res}"})
 
 @app.post("/teste")
-def testeCalc(num):
-    
-    return num
+def testeCalc(num:tester):
+    nmr = num.number * 5
+    print(nmr,"AEEEE krlhoooo")
+    return nmr
 
