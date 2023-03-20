@@ -24,11 +24,27 @@
         </div>
     </header>
     <main>
+        <button onclick="showSamples()">LISTAR AMOSTRAS</button>
+        <table class="table table-dark">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">co</th>
+                <th scope="col">so2</th>
+                <th scope="col">no2</th>
+                <th scope="col">o3</th>
+                <th scope="col">mp2,5</th>
+                <th scope="col">mp10</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
         <div class="container">
         <div id="mostrarAmostras">
-            <button onclick="showSamples()">Pull samples</button>
+            <button onclick="sendSamples()">SAMPLES POST    </button>
             <div id="spaceToSamples"></div>
         </div>
+        <button onclick="testeFunc()">TESTES</button>
     </main>
     <footer>
         <div class="container">
@@ -59,7 +75,7 @@
 
         </div>
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
