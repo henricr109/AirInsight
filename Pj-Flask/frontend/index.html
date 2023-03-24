@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Air Insight</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <svg style="width: 30;" class="css-ze2te4 css-qd6ojx" viewBox="0 0 64.81481481481481 73.74242093404312"><g transform="translate(-0.8120330550080713, -1.5963379227107373) scale(0.1610988017062988)" class="css-4k10tw" fill="#9eeaf8"><g xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M233.891,219.266c4.727-10.462-4.865-15.181-12.64-10.353   c-10.857,6.731-9.597,21.941-3.002,31.114c4.7,6.539,12.135,11.375,20.964,11.578c38.744,0.849,49.614-52.358,11.046-66.663   c-60.461-22.429-113.678,49.219-70.261,104.87c0,0-21.562-61.315,27.74-76.687c6.029-11.319,19.269-16.525,27.735-10.253   C248.626,212.596,231.566,224.403,233.891,219.266L233.891,219.266z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M206.337,218.897c0.238,0.296-4.569,9.4,5.789,24.265   c-1.369,0.286-34.794,39.203,17.526,87.083c-43.644-26.016-52.44-58.67-48.306-79.239   C186.027,227.689,206.215,218.743,206.337,218.897L206.337,218.897z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M216.575,248.765c0.699-0.267,7.913,8.156,20.441,8.791   c0,0-26.374,49.783,44.992,93.656C180.316,318.297,205.04,253.158,216.575,248.765L216.575,248.765z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M242.93,257.775c0,0,9.547,0.371,19.675-5.535c0,0-38.466,65.78,60.594,105.266   C240.355,343.125,229.738,288.184,242.93,257.775L242.93,257.775z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M325.289,238.679c1.297,0.163-11.519-7.662-27.762-4.358   c-15.271,3.104-33.895,16.419-36.857,43.785c-4.331,39.924,42.446,70.835,79.33,77.405c26.249,4.682,49.7,18.023,57.127,27.391   c-26.211-45.035-104.844-44.522-117.719-92.605C272.339,263.889,293.962,234.609,325.289,238.679L325.289,238.679z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M324.689,263.222c-0.256-0.187-7.649-11.671-20.054-0.206   c0,0-8.322,9.832,2.562,16.771c6.071,4.388,15.97,3.673,21.909-0.566c15.962-11.412,8.519-36.07-10.475-36.508   c-31.413-0.726-43.879,36.257-27.909,59.326c24.609,35.504,71.675,33.932,98.521,65.211c0,0-1.18-34.995-27.639-44.631   c0,0-43.607-14.308-42.927-35.814c0,0-12.023,0.467-18.503-7.305c-10.312-12.397,4.449-25.421,11.524-25.469   C321.595,253.958,327.104,265.112,324.689,263.222L324.689,263.222z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M240.931,177.274c0,0-16.123-13.163-34.274-14.396   c-35.789-2.45-67.84,38.41-64.459,74.24c2.039,21.604,16.483,42.23,28.05,48.979c-23.55-32.838-9.683-71.598,2.981-85.588   C196.788,174.477,220.392,173.924,240.931,177.274L240.931,177.274z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M251.094,179.742c0,0-10.627-12.653-5.954-33.353   c0,0-44.012-37.743-91.734,10.681c0,0-52.254,53.773-8.676,109.429c-16.042-33.983-6.373-68.201,15.632-90.083   C183.065,153.841,222.441,146.36,251.094,179.742L251.094,179.742z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M247.168,140.088c0,0,7.006-12.583,18.552-13.55   C217.683,54.378,43.259,178.08,146.84,289.962c-40.578-50.154-31.576-115.496,19.213-151.08   C187.645,123.752,220.885,119.757,247.168,140.088L247.168,140.088z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M272.138,125.153c0.563,0.974,1.777,1.332,3.117,1.975   c12.794,6.109,14.81,17.703,5.725,27.188c9.947-30.745-38.493-29.558-31.122,6.531c4.794,23.433,28.069,32.203,51.096,23.828   c45.635-16.729,29.235-67.208-2.554-89.002c-19.112-13.113-66.023-33.999-135.504,8.705c0,0-72.479,40.893-60.933,125.242   c6.051,44.183,45.496,84.932,82.204,105.484c0,0-98.156-69.644-71.264-148.168c10.131-30.951,39.296-65.665,74.101-79.944   C216.869,94.739,253.907,93.613,272.138,125.153L272.138,125.153z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M159.854,96.941c-79.42,59.913-91.876,154.416-2.818,229.165   c-87.478-31.522-95.706-157.725-37.383-226.451c0,0,34.795-13.029,9.926-30.852c0,0,10.542,11.909-0.71,20.628   c-8.468,6.571-21.437,6.205-29.584-1.263c-22.039-20.19,2.29-52.318,29-51.701c12.024,0.28,25.798,9.6,31.309,20.999   C167.882,74.615,160.091,96.759,159.854,96.941L159.854,96.941z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M258.257,362.005c-3.787-4.193-111.996-11.119-154.711-69.564   c-33.689-46.094-40.175-121.68,8.807-192.714c-3.961,1.681-13.043-3.753-12.352-4.3c-38.066,34.517-49.547,90.518-43.462,139.876   C73.74,374.957,261.933,366.086,258.257,362.005L258.257,362.005z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M88.285,80.281c0,0,1.123,6.792,8.353,12.136   c0.998,0.122-7.401,6.042-16.867,18.5C83.754,97.824,86.988,80.135,88.285,80.281L88.285,80.281z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M28.465,45.735c2.41-23.03,26.542-24.095,39.644-8.73   c10.854,12.709,13.251,36.793-2.319,68.285c-19.045,38.549-37.132,103.363-16.926,136.625c0,0-6.152-68.707,21.094-124.396   C81.573,92.19,99.06,51.968,82.681,27.424C67.372,4.483,38.174,5.652,19.797,21.822C5.299,34.577-3.585,68.048,17.787,76.721   c28.269,11.468,39.361-22.186,21.063-30.556C36.191,44.94,32.605,45.082,28.465,45.735L28.465,45.735z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M35.305,40.36c-0.63,0.198,15.896-16.835,29.769,0.766   c15.629,19.883,2.143,47.786-11.394,78.729c-9.789,22.392-17.628,49.673-18.068,78.71c0,0-11.874-80.091,3.955-115.776   C67.628,62.125,44.743,37.441,35.305,40.36L35.305,40.36z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M16.314,82.926c0,0-7.564,25.757-6.712,63.944   c0.822,37.004,9.6,85.948,37.97,117.804C27.563,211.673,16.901,139.258,33.312,85.411C23.765,87.912,16.007,82.673,16.314,82.926   L16.314,82.926z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M407.367,419.319c-46.398-73.416-170.682-38.541-226.646-56.23   c-12.861-3.107-20.887,10.077-0.694,17.403c6.181,2.239,38.339,6.611,84.649,1.532   C363.227,371.205,407.805,420.018,407.367,419.319L407.367,419.319z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M400.941,422.463c0,0-57.858-40.082-167.215-5.047   c-12.224,3.926-25.79,8.514-40.126,10.057c-27.372,2.938-55.571-2.754-68.676-27.927c-5.799-11.14-3.67-33.121,13.74-42.777   c7.907-4.385,20.403-4.959,24.06,6.856c0,0,1.252,9-8.001,11.869c-15.925,10.886-6.102,25.517,6.944,31.41   c34.685,15.672,89.402-15.448,127.713-17.532C324.342,387.471,363.916,396.631,400.941,422.463L400.941,422.463z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M255.866,387.335c0,0-54.642,8.735-76.831-1.447   c-6.869-3.157-12.597-5.156-17.831-4.091c-10.486,2.127-11.046,11.231-3.774,16.905   C181.229,417.267,234.489,395.924,255.866,387.335L255.866,387.335z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M390.327,424.828c0,0-63.154-33.585-105.449-7.551   c-15.87,9.782-24.813,30.748-5.09,45.518c0,0,20.649,14.487,39.972-6.56c11.556-16.395-8.957-29.828-22.352-17.351   c-3.613,3.363-6.087,8.183-1.492,13.977c-24.249-14.428-5.594-31.365,19.955-34.418   C342.415,415.27,379.315,420.504,390.327,424.828L390.327,424.828z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M299.489,432.172c0,0,12.947-6.13,21.786,1.353c0,0,14.988-9.824,34.589-7.569   C346.29,418.345,299.262,420.475,299.489,432.172L299.489,432.172z"></path></g></g></svg>Air Insight
+            </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Insert</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="container">
+          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="assets/images/Air Pollution 101.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="assets/images/environmental_exposures_Stocksy_txpab6690cd6CS300_Medium_4277382_Header-1024x575.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/image.webp" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <div class="container">
+                <h5 style="margin-top: 15px;margin-bottom: 15px;">Samples</h5>
+            </div>
+          </div>
+          <table class="table table-active">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">CO</th>
+                <th scope="col">SO2</th>
+                <th scope="col">NO2</th>
+                <th scope="col">O3</th>
+                <th scope="col">MP2,5</th>
+                <th scope="col">MP10</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>22</td>
+                <td>5</td>
+                <td>13</td>
+                <td>22</td>
+                <td>17</td>
+                <td>42</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>22</td>
+                <td>5</td>
+                <td>13</td>
+                <td>22</td>
+                <td>17</td>
+                <td>42</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>22</td>
+                <td>5</td>
+                <td>13</td>
+                <td>22</td>
+                <td>17</td>
+                <td>42</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>22</td>
+                <td>5</td>
+                <td>13</td>
+                <td>22</td>
+                <td>17</td>
+                <td>42</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>22</td>
+                <td>5</td>
+                <td>13</td>
+                <td>22</td>
+                <td>17</td>
+                <td>42</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="container">
+            <h5>Insert sample</h5>
+            <form class="form-control">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">CO</span>
+                    <input type="number" id="pollu-co" class="form-control" placeholder="Enter the value" aria-label="Enter the value" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">SO2</span>
+                    <input type="number" id="pollu-so2" class="form-control" placeholder="Enter the value" aria-label="Enter the value" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">NO2</span>
+                    <input type="number" id="pollu-no2" class="form-control" placeholder="Enter the value" aria-label="Enter the value" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">O3</span>
+                    <input type="number" id="pollu-o3" class="form-control" placeholder="Enter the value" aria-label="Enter the value" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">MP2,5</span>
+                    <input type="number" id="pollu-mp25" class="form-control" placeholder="Enter the value" aria-label="Enter the value" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">MP10</span>
+                    <input type="number" id="pollu-mp10" class="form-control" placeholder="Enter the value" aria-label="Enter the value" aria-describedby="basic-addon1">
+                </div>
+                <div class="btn btn-primary" onclick="passarAmostraParaOBackend()">Send sample</div>
+            </form>
+            <style>
+                form{
+                    margin:30px 0px;
+                }
+            </style>
+        </div>
+          <div>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      CO
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                      NO2
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                      SO2
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        O3
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                      <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        MP2,5
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                      <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        MP 10
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                      <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+    </div>
+    <footer style="margin-top: 20px; border-top: 1px solid #CCC;">
+        <div class="container">
+            <div style="padding: 10px 0px;" class="container-top">
+                <div>
+                    <svg style="width: 30;" class="css-ze2te4 css-qd6ojx" viewBox="0 0 64.81481481481481 73.74242093404312"><g transform="translate(-0.8120330550080713, -1.5963379227107373) scale(0.1610988017062988)" class="css-4k10tw" fill="#9eeaf8"><g xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M233.891,219.266c4.727-10.462-4.865-15.181-12.64-10.353   c-10.857,6.731-9.597,21.941-3.002,31.114c4.7,6.539,12.135,11.375,20.964,11.578c38.744,0.849,49.614-52.358,11.046-66.663   c-60.461-22.429-113.678,49.219-70.261,104.87c0,0-21.562-61.315,27.74-76.687c6.029-11.319,19.269-16.525,27.735-10.253   C248.626,212.596,231.566,224.403,233.891,219.266L233.891,219.266z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M206.337,218.897c0.238,0.296-4.569,9.4,5.789,24.265   c-1.369,0.286-34.794,39.203,17.526,87.083c-43.644-26.016-52.44-58.67-48.306-79.239   C186.027,227.689,206.215,218.743,206.337,218.897L206.337,218.897z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M216.575,248.765c0.699-0.267,7.913,8.156,20.441,8.791   c0,0-26.374,49.783,44.992,93.656C180.316,318.297,205.04,253.158,216.575,248.765L216.575,248.765z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M242.93,257.775c0,0,9.547,0.371,19.675-5.535c0,0-38.466,65.78,60.594,105.266   C240.355,343.125,229.738,288.184,242.93,257.775L242.93,257.775z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M325.289,238.679c1.297,0.163-11.519-7.662-27.762-4.358   c-15.271,3.104-33.895,16.419-36.857,43.785c-4.331,39.924,42.446,70.835,79.33,77.405c26.249,4.682,49.7,18.023,57.127,27.391   c-26.211-45.035-104.844-44.522-117.719-92.605C272.339,263.889,293.962,234.609,325.289,238.679L325.289,238.679z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M324.689,263.222c-0.256-0.187-7.649-11.671-20.054-0.206   c0,0-8.322,9.832,2.562,16.771c6.071,4.388,15.97,3.673,21.909-0.566c15.962-11.412,8.519-36.07-10.475-36.508   c-31.413-0.726-43.879,36.257-27.909,59.326c24.609,35.504,71.675,33.932,98.521,65.211c0,0-1.18-34.995-27.639-44.631   c0,0-43.607-14.308-42.927-35.814c0,0-12.023,0.467-18.503-7.305c-10.312-12.397,4.449-25.421,11.524-25.469   C321.595,253.958,327.104,265.112,324.689,263.222L324.689,263.222z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M240.931,177.274c0,0-16.123-13.163-34.274-14.396   c-35.789-2.45-67.84,38.41-64.459,74.24c2.039,21.604,16.483,42.23,28.05,48.979c-23.55-32.838-9.683-71.598,2.981-85.588   C196.788,174.477,220.392,173.924,240.931,177.274L240.931,177.274z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M251.094,179.742c0,0-10.627-12.653-5.954-33.353   c0,0-44.012-37.743-91.734,10.681c0,0-52.254,53.773-8.676,109.429c-16.042-33.983-6.373-68.201,15.632-90.083   C183.065,153.841,222.441,146.36,251.094,179.742L251.094,179.742z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M247.168,140.088c0,0,7.006-12.583,18.552-13.55   C217.683,54.378,43.259,178.08,146.84,289.962c-40.578-50.154-31.576-115.496,19.213-151.08   C187.645,123.752,220.885,119.757,247.168,140.088L247.168,140.088z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M272.138,125.153c0.563,0.974,1.777,1.332,3.117,1.975   c12.794,6.109,14.81,17.703,5.725,27.188c9.947-30.745-38.493-29.558-31.122,6.531c4.794,23.433,28.069,32.203,51.096,23.828   c45.635-16.729,29.235-67.208-2.554-89.002c-19.112-13.113-66.023-33.999-135.504,8.705c0,0-72.479,40.893-60.933,125.242   c6.051,44.183,45.496,84.932,82.204,105.484c0,0-98.156-69.644-71.264-148.168c10.131-30.951,39.296-65.665,74.101-79.944   C216.869,94.739,253.907,93.613,272.138,125.153L272.138,125.153z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M159.854,96.941c-79.42,59.913-91.876,154.416-2.818,229.165   c-87.478-31.522-95.706-157.725-37.383-226.451c0,0,34.795-13.029,9.926-30.852c0,0,10.542,11.909-0.71,20.628   c-8.468,6.571-21.437,6.205-29.584-1.263c-22.039-20.19,2.29-52.318,29-51.701c12.024,0.28,25.798,9.6,31.309,20.999   C167.882,74.615,160.091,96.759,159.854,96.941L159.854,96.941z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M258.257,362.005c-3.787-4.193-111.996-11.119-154.711-69.564   c-33.689-46.094-40.175-121.68,8.807-192.714c-3.961,1.681-13.043-3.753-12.352-4.3c-38.066,34.517-49.547,90.518-43.462,139.876   C73.74,374.957,261.933,366.086,258.257,362.005L258.257,362.005z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M88.285,80.281c0,0,1.123,6.792,8.353,12.136   c0.998,0.122-7.401,6.042-16.867,18.5C83.754,97.824,86.988,80.135,88.285,80.281L88.285,80.281z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M28.465,45.735c2.41-23.03,26.542-24.095,39.644-8.73   c10.854,12.709,13.251,36.793-2.319,68.285c-19.045,38.549-37.132,103.363-16.926,136.625c0,0-6.152-68.707,21.094-124.396   C81.573,92.19,99.06,51.968,82.681,27.424C67.372,4.483,38.174,5.652,19.797,21.822C5.299,34.577-3.585,68.048,17.787,76.721   c28.269,11.468,39.361-22.186,21.063-30.556C36.191,44.94,32.605,45.082,28.465,45.735L28.465,45.735z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M35.305,40.36c-0.63,0.198,15.896-16.835,29.769,0.766   c15.629,19.883,2.143,47.786-11.394,78.729c-9.789,22.392-17.628,49.673-18.068,78.71c0,0-11.874-80.091,3.955-115.776   C67.628,62.125,44.743,37.441,35.305,40.36L35.305,40.36z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M16.314,82.926c0,0-7.564,25.757-6.712,63.944   c0.822,37.004,9.6,85.948,37.97,117.804C27.563,211.673,16.901,139.258,33.312,85.411C23.765,87.912,16.007,82.673,16.314,82.926   L16.314,82.926z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M407.367,419.319c-46.398-73.416-170.682-38.541-226.646-56.23   c-12.861-3.107-20.887,10.077-0.694,17.403c6.181,2.239,38.339,6.611,84.649,1.532   C363.227,371.205,407.805,420.018,407.367,419.319L407.367,419.319z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M400.941,422.463c0,0-57.858-40.082-167.215-5.047   c-12.224,3.926-25.79,8.514-40.126,10.057c-27.372,2.938-55.571-2.754-68.676-27.927c-5.799-11.14-3.67-33.121,13.74-42.777   c7.907-4.385,20.403-4.959,24.06,6.856c0,0,1.252,9-8.001,11.869c-15.925,10.886-6.102,25.517,6.944,31.41   c34.685,15.672,89.402-15.448,127.713-17.532C324.342,387.471,363.916,396.631,400.941,422.463L400.941,422.463z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M255.866,387.335c0,0-54.642,8.735-76.831-1.447   c-6.869-3.157-12.597-5.156-17.831-4.091c-10.486,2.127-11.046,11.231-3.774,16.905   C181.229,417.267,234.489,395.924,255.866,387.335L255.866,387.335z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M390.327,424.828c0,0-63.154-33.585-105.449-7.551   c-15.87,9.782-24.813,30.748-5.09,45.518c0,0,20.649,14.487,39.972-6.56c11.556-16.395-8.957-29.828-22.352-17.351   c-3.613,3.363-6.087,8.183-1.492,13.977c-24.249-14.428-5.594-31.365,19.955-34.418   C342.415,415.27,379.315,420.504,390.327,424.828L390.327,424.828z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M299.489,432.172c0,0,12.947-6.13,21.786,1.353c0,0,14.988-9.824,34.589-7.569   C346.29,418.345,299.262,420.475,299.489,432.172L299.489,432.172z"></path></g></g></svg>Air Insight
+                </div>
+                <div>
+                    <ul style="list-style: none; margin-top: 20px;">
+                        <li style="display: inline-block; border-right: 1px solid #CCC; padding-right: 5px;">Terms of Use</li>
+                        <li style="display: inline-block;">Terms of Policy</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="border-top: 1px solid #CCC;padding: 10px 0px;" class="container-bottom">
+                <div class="copy">&copy;Air Insight 2023. All Rights Reserved</div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
